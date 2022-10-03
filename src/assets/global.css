@@ -23,4 +23,5 @@ img {
 body {
     background-image: url("/src/assets/images/background-stars.svg");
     background-color: var(--dark-blue);
+    background-position: top;
 }

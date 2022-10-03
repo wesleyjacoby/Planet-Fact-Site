@@ -1,7 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import Home from '../views/Home.vue'
 import Mercury from '../views/Mercury.vue'
 
 const routes = [
+  {
+    path: '/',
+    name: 'home',
+    component: Home
+  },
+
   {
     path: '/mercury',
     name: 'mercury',
