@@ -1,6 +1,10 @@
 <template>
   <div class="mobile">
-    <router-link :to="{ name: 'mercury' }" class="menu-items">
+    <router-link
+      :to="{ name: 'mercury' }"
+      class="menu-items"
+      @click="closeMenu"
+    >
       <div class="menu-container">
         <div class="circle-text-container">
           <div class="circle mercury"></div>
@@ -14,7 +18,11 @@
 
     <hr />
 
-    <router-link :to="{ name: 'mercury' }" class="menu-items">
+    <router-link
+      :to="{ name: 'mercury' }"
+      class="menu-items"
+      @click="closeMenu"
+    >
       <div class="menu-container">
         <div class="circle-text-container">
           <div class="circle venus"></div>
@@ -28,7 +36,11 @@
 
     <hr />
 
-    <router-link :to="{ name: 'mercury' }" class="menu-items">
+    <router-link
+      :to="{ name: 'mercury' }"
+      class="menu-items"
+      @click="closeMenu"
+    >
       <div class="menu-container">
         <div class="circle-text-container">
           <div class="circle earth"></div>
@@ -42,7 +54,11 @@
 
     <hr />
 
-    <router-link :to="{ name: 'mercury' }" class="menu-items">
+    <router-link
+      :to="{ name: 'mercury' }"
+      class="menu-items"
+      @click="closeMenu"
+    >
       <div class="menu-container">
         <div class="circle-text-container">
           <div class="circle mars"></div>
@@ -56,7 +72,11 @@
 
     <hr />
 
-    <router-link :to="{ name: 'mercury' }" class="menu-items">
+    <router-link
+      :to="{ name: 'mercury' }"
+      class="menu-items"
+      @click="closeMenu"
+    >
       <div class="menu-container">
         <div class="circle-text-container">
           <div class="circle jupiter"></div>
@@ -70,7 +90,11 @@
 
     <hr />
 
-    <router-link :to="{ name: 'mercury' }" class="menu-items">
+    <router-link
+      :to="{ name: 'mercury' }"
+      class="menu-items"
+      @click="closeMenu"
+    >
       <div class="menu-container">
         <div class="circle-text-container">
           <div class="circle saturn"></div>
@@ -84,7 +108,11 @@
 
     <hr />
 
-    <router-link :to="{ name: 'mercury' }" class="menu-items">
+    <router-link
+      :to="{ name: 'mercury' }"
+      class="menu-items"
+      @click="closeMenu"
+    >
       <div class="menu-container">
         <div class="circle-text-container">
           <div class="circle uranus"></div>
@@ -98,7 +126,11 @@
 
     <hr />
 
-    <router-link :to="{ name: 'mercury' }" class="menu-items">
+    <router-link
+      :to="{ name: 'mercury' }"
+      class="menu-items"
+      @click="closeMenu"
+    >
       <div class="menu-container">
         <div class="circle-text-container">
           <div class="circle neptune"></div>
@@ -121,6 +153,12 @@ export default {
       chevron: chevron,
     };
   },
+
+  methods: {
+    closeMenu() {
+      this.$emit("close");
+    },
+  },
 };
 </script>
 
@@ -130,11 +168,13 @@ a {
 }
 
 .mobile {
+  position: absolute;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: calc(100vh - 94px);
+  height: fit-content;
   background: var(--dark-blue);
+  z-index: 999;
 }
 
 .menu-container {
