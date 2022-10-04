@@ -5,6 +5,13 @@
     </div>
     <nav class="desktop-menu">
       <router-link :to="{ name: 'mercury' }">Mercury</router-link>
+      <router-link :to="{ name: 'venus' }">Venus</router-link>
+      <router-link :to="{ name: 'earth' }">Earth</router-link>
+      <router-link :to="{ name: 'mars' }">Mars</router-link>
+      <router-link :to="{ name: 'jupiter' }">Jupiter</router-link>
+      <router-link :to="{ name: 'saturn' }">Saturn</router-link>
+      <router-link :to="{ name: 'uranus' }">Uranus</router-link>
+      <router-link :to="{ name: 'neptune' }">Neptune</router-link>
     </nav>
 
     <div class="mobile-menu">
