@@ -1,15 +1,30 @@
 <template>
-  <nav class="tabs-container">
+  <nav class="tabs-container" :style="style">
     <div class="text">
-      <a href="#" :style="style"><p>Overview</p></a>
+      <a
+        href="#"
+        @click="overviewClick"
+        :class="[overviewActive ? 'active-link' : '']"
+        ><p>Overview</p></a
+      >
     </div>
 
     <div class="text">
-      <a href="#"><p>Structure</p></a>
+      <a
+        href="#"
+        @click="structureClick"
+        :class="[structureActive ? 'active-link' : '']"
+        ><p>Structure</p></a
+      >
     </div>
 
     <div class="text">
-      <a href="#"><p>Surface</p></a>
+      <a
+        href="#"
+        @click="surfaceClick"
+        :class="[surfaceActive ? 'active-link' : '']"
+        ><p>Surface</p></a
+      >
     </div>
   </nav>
 
@@ -19,6 +34,34 @@
 <script>
 export default {
   props: ["style"],
+
+  data() {
+    return {
+      overviewActive: true,
+      structureActive: false,
+      surfaceActive: false,
+    };
+  },
+
+  methods: {
+    overviewClick() {
+      this.overviewActive = true;
+      this.structureActive = false;
+      this.surfaceActive = false;
+    },
+
+    structureClick() {
+      this.overviewActive = false;
+      this.structureActive = true;
+      this.surfaceActive = false;
+    },
+
+    surfaceClick() {
+      this.overviewActive = false;
+      this.structureActive = false;
+      this.surfaceActive = true;
+    },
+  },
 };
 </script>
 
@@ -40,18 +83,24 @@ export default {
   padding: 20px 0px;
 }
 
-.text:hover {
-  cursor: pointer;
-  opacity: 1;
-}
-
 .text a {
   mix-blend-mode: normal;
   opacity: 0.5;
   color: var(--white);
 }
 
+.text:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
 .text a:hover {
+  opacity: 1;
+  text-decoration: 4px underline v-bind(style);
+  text-underline-offset: 20px;
+}
+
+.text a.active-link {
   opacity: 1;
   text-decoration: 4px underline v-bind(style);
   text-underline-offset: 20px;
