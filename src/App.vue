@@ -17,7 +17,7 @@
     </div>
   </header>
 
-  <hr class="hr-heading" />
+  <hr />
 
   <div class="mobile-menu-list">
     <MobileMenu v-show="isMobileMenuOpen" @close="toggleMenu" />
@@ -88,10 +88,6 @@ hr {
   mix-blend-mode: normal;
   opacity: 0.1;
   margin: 0;
-}
-
-.hr-heading {
-  margin-bottom: 24px;
 }
 
 .inactive {

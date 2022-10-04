@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-// import Home from '../views/Home.vue'
 import Mercury from '../views/Mercury.vue'
 
 const routes = [

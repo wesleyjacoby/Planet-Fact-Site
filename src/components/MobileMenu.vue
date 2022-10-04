@@ -5,7 +5,7 @@
       class="menu-items"
       @click="closeMenu"
     >
-      <div class="menu-container">
+      <div class="menu-container first-option">
         <div class="circle-text-container">
           <div class="circle mercury"></div>
           <p>Mercury</p>
@@ -183,6 +183,10 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 20px 32px 20px 24px;
+}
+
+.first-option {
+  padding-top: 44px;
 }
 
 .circle-text-container {
