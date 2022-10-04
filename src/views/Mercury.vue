@@ -1,13 +1,23 @@
 <template>
-  <h1>MERCURY</h1>
+  <Tabs :style="color" />
 </template>
 
 <script>
-export default {};
+import Tabs from "/src/components/Tabs.vue";
+
+export default {
+  components: { Tabs },
+
+  data() {
+    return {
+      color: "hsla(194, 48%, 50%, 1)",
+    };
+  },
+};
 </script>
 
 <style>
 h1 {
-  color: white;
+  color: var(--white);
 }
 </style>

@@ -1,10 +1,23 @@
 <template>
-  <h1>JUPITER</h1>
+  <Tabs :style="color" />
 </template>
 
 <script>
-export default {};
+import Tabs from "/src/components/Tabs.vue";
+
+export default {
+  components: { Tabs },
+
+  data() {
+    return {
+      color: "hsla(2, 68%, 53%, 1)",
+    };
+  },
+};
 </script>
 
 <style>
-</style>
+h1 {
+  color: var(--white);
+}
+</style> 
