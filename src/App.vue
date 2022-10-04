@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="logo">
-      <h1>The Planets</h1>
+      <router-link :to="{ name: 'mercury' }"><h1>The Planets</h1></router-link>
     </div>
     <nav class="desktop-menu">
       <router-link :to="{ name: 'mercury' }">Mercury</router-link>

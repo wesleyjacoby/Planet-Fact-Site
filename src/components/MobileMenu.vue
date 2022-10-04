@@ -18,11 +18,7 @@
 
     <hr />
 
-    <router-link
-      :to="{ name: 'mercury' }"
-      class="menu-items"
-      @click="closeMenu"
-    >
+    <router-link :to="{ name: 'venus' }" class="menu-items" @click="closeMenu">
       <div class="menu-container">
         <div class="circle-text-container">
           <div class="circle venus"></div>
@@ -36,11 +32,7 @@
 
     <hr />
 
-    <router-link
-      :to="{ name: 'mercury' }"
-      class="menu-items"
-      @click="closeMenu"
-    >
+    <router-link :to="{ name: 'earth' }" class="menu-items" @click="closeMenu">
       <div class="menu-container">
         <div class="circle-text-container">
           <div class="circle earth"></div>
@@ -54,11 +46,7 @@
 
     <hr />
 
-    <router-link
-      :to="{ name: 'mercury' }"
-      class="menu-items"
-      @click="closeMenu"
-    >
+    <router-link :to="{ name: 'mars' }" class="menu-items" @click="closeMenu">
       <div class="menu-container">
         <div class="circle-text-container">
           <div class="circle mars"></div>
@@ -73,7 +61,7 @@
     <hr />
 
     <router-link
-      :to="{ name: 'mercury' }"
+      :to="{ name: 'jupiter' }"
       class="menu-items"
       @click="closeMenu"
     >
@@ -90,11 +78,7 @@
 
     <hr />
 
-    <router-link
-      :to="{ name: 'mercury' }"
-      class="menu-items"
-      @click="closeMenu"
-    >
+    <router-link :to="{ name: 'saturn' }" class="menu-items" @click="closeMenu">
       <div class="menu-container">
         <div class="circle-text-container">
           <div class="circle saturn"></div>
@@ -108,11 +92,7 @@
 
     <hr />
 
-    <router-link
-      :to="{ name: 'mercury' }"
-      class="menu-items"
-      @click="closeMenu"
-    >
+    <router-link :to="{ name: 'uranus' }" class="menu-items" @click="closeMenu">
       <div class="menu-container">
         <div class="circle-text-container">
           <div class="circle uranus"></div>
@@ -127,7 +107,7 @@
     <hr />
 
     <router-link
-      :to="{ name: 'mercury' }"
+      :to="{ name: 'neptune' }"
       class="menu-items"
       @click="closeMenu"
     >
