@@ -43,6 +43,8 @@ export default {
     };
   },
 
+  emits: ["overview-tab", "structure-tab", "surface-tab"],
+
   methods: {
     overviewClick() {
       this.overviewActive = true;
