@@ -48,18 +48,39 @@ export default {
       this.overviewActive = true;
       this.structureActive = false;
       this.surfaceActive = false;
+
+      this.$emit(
+        "overview-tab",
+        this.overviewActive,
+        this.structureActive,
+        this.surfaceActive
+      );
     },
 
     structureClick() {
       this.overviewActive = false;
       this.structureActive = true;
       this.surfaceActive = false;
+
+      this.$emit(
+        "structure-tab",
+        this.overviewActive,
+        this.structureActive,
+        this.surfaceActive
+      );
     },
 
     surfaceClick() {
       this.overviewActive = false;
       this.structureActive = false;
       this.surfaceActive = true;
+
+      this.$emit(
+        "surface-tab",
+        this.overviewActive,
+        this.structureActive,
+        this.surfaceActive
+      );
     },
   },
 };
