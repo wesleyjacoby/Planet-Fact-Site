@@ -11,15 +11,17 @@
     :planetName="planetName"
     :surfaceActive="surfaceActive"
   />
+  <Text :planetName="planetName" />
 </template>
 
 <script>
 import Tabs from "/src/components/Tabs.vue";
 import PlanetImages from "/src/components/PlanetImages.vue";
+import Text from "/src/components/Text";
 import planetData from "/src/data/data.json";
 
 export default {
-  components: { Tabs, PlanetImages },
+  components: { Tabs, PlanetImages, Text },
 
   data() {
     return {
