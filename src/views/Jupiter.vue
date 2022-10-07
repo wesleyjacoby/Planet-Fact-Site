@@ -11,15 +11,17 @@
     :planetName="planetName"
     :surfaceActive="surfaceActive"
   />
+  <Text :planetName="planetName" :activeContent="activeContent" />
 </template>
 
 <script>
 import Tabs from "/src/components/Tabs.vue";
 import PlanetImages from "/src/components/PlanetImages.vue";
+import Text from "/src/components/Text";
 import planetData from "/src/data/data.json";
 
 export default {
-  components: { Tabs, PlanetImages },
+  components: { Tabs, PlanetImages, Text },
 
   data() {
     return {
@@ -49,6 +51,25 @@ export default {
         return this.planets[4].images.internal;
       } else {
         return [this.planets[4].images.geology, this.planets[4].images.planet];
+      }
+    },
+
+    activeContent() {
+      if (this.overviewActive) {
+        return [
+          this.planets[4].overview.content,
+          this.planets[4].overview.source,
+        ];
+      } else if (this.structureActive) {
+        return [
+          this.planets[4].structure.content,
+          this.planets[4].structure.source,
+        ];
+      } else {
+        return [
+          this.planets[4].geology.content,
+          this.planets[4].geology.source,
+        ];
       }
     },
   },

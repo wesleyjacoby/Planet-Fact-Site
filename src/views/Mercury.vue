@@ -11,7 +11,7 @@
     :planetName="planetName"
     :surfaceActive="surfaceActive"
   />
-  <Text :planetName="planetName" />
+  <Text :planetName="planetName" :activeContent="activeContent" />
 </template>
 
 <script>
@@ -51,6 +51,25 @@ export default {
         return this.planets[0].images.internal;
       } else {
         return [this.planets[0].images.geology, this.planets[0].images.planet];
+      }
+    },
+
+    activeContent() {
+      if (this.overviewActive) {
+        return [
+          this.planets[0].overview.content,
+          this.planets[0].overview.source,
+        ];
+      } else if (this.structureActive) {
+        return [
+          this.planets[0].structure.content,
+          this.planets[0].structure.source,
+        ];
+      } else {
+        return [
+          this.planets[0].geology.content,
+          this.planets[0].geology.source,
+        ];
       }
     },
   },

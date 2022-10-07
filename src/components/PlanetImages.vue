@@ -82,12 +82,16 @@ export default {
 }
 
 .geology {
-  width: 30%;
-  transform: translateY(-35%);
+  display: none;
 }
 
-.saturn-geology {
+/* .geology {
+  width: 30%;
+  transform: translateY(-35%);
+} */
+
+/* .saturn-geology {
   width: 30%;
   transform: translateY(-75%);
-}
+} */
 </style>
