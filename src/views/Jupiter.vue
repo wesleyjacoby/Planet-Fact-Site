@@ -12,16 +12,18 @@
     :surfaceActive="surfaceActive"
   />
   <Text :planetName="planetName" :activeContent="activeContent" />
+  <PlanetStats :activeStats="activeStats" />
 </template>
 
 <script>
 import Tabs from "/src/components/Tabs.vue";
 import PlanetImages from "/src/components/PlanetImages.vue";
 import Text from "/src/components/Text";
+import PlanetStats from "/src/components/PlanetStats.vue";
 import planetData from "/src/data/data.json";
 
 export default {
-  components: { Tabs, PlanetImages, Text },
+  components: { Tabs, PlanetImages, Text, PlanetStats },
 
   data() {
     return {
@@ -71,6 +73,15 @@ export default {
           this.planets[4].geology.source,
         ];
       }
+    },
+
+    activeStats() {
+      return [
+        this.planets[4].rotation,
+        this.planets[4].revolution,
+        this.planets[4].radius,
+        this.planets[4].temperature,
+      ];
     },
   },
 };
