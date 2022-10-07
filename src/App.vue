@@ -193,4 +193,22 @@ nav ul li .router-link-exact-active {
     margin-bottom: 39px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  header {
+    flex-direction: row;
+    padding: 22px 40px 27px 32px;
+  }
+
+  li {
+    justify-content: flex-end;
+    column-gap: 33px;
+  }
+
+  .logo {
+    width: 100%;
+    display: flex;
+    margin-bottom: 0px;
+  }
+}
 </style>
