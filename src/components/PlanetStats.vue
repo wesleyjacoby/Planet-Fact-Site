@@ -86,17 +86,18 @@ export default {
   .stats-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    /* gap: 11px; */
+    justify-content: space-between;
+    column-gap: 11px;
     margin: 0px 39px 36px 39px;
   }
 
   .stat-box {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    padding: 18px 69px 18px 15px;
+    align-items: flex-start;
+    padding: 18px 15px;
   }
 
   .stat-text {

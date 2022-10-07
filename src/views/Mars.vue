@@ -1,29 +1,43 @@
 <template>
-  <Tabs
-    :style="color"
-    @overview-tab="updateActive"
-    @structure-tab="updateActive"
-    @surface-tab="updateActive"
-  />
-  <PlanetImages
-    :className="className"
-    :activeImage="activeImage"
-    :planetName="planetName"
-    :surfaceActive="surfaceActive"
-  />
-  <Text :planetName="planetName" :activeContent="activeContent" />
+  <main>
+    <Tabs
+      :isLarge="isLarge"
+      :style="color"
+      @overview-tab="updateActive"
+      @structure-tab="updateActive"
+      @surface-tab="updateActive"
+    />
+    <PlanetImages
+      class="planet-image"
+      :className="className"
+      :activeImage="activeImage"
+      :planetName="planetName"
+      :surfaceActive="surfaceActive"
+    />
+    <div class="text-tabs">
+      <Text :planetName="planetName" :activeContent="activeContent" />
+      <TabsLarge
+        :isLarge="isLarge"
+        :style="color"
+        @overview-tab="updateActive"
+        @structure-tab="updateActive"
+        @surface-tab="updateActive"
+      />
+    </div>
+  </main>
   <PlanetStats :activeStats="activeStats" />
 </template>
 
 <script>
 import Tabs from "/src/components/Tabs.vue";
+import TabsLarge from "/src/components/TabsLarge.vue";
 import PlanetImages from "/src/components/PlanetImages.vue";
 import Text from "/src/components/Text";
 import PlanetStats from "/src/components/PlanetStats.vue";
 import planetData from "/src/data/data.json";
 
 export default {
-  components: { Tabs, PlanetImages, Text, PlanetStats },
+  components: { Tabs, TabsLarge, PlanetImages, Text, PlanetStats },
 
   data() {
     return {
@@ -34,10 +48,33 @@ export default {
       structureActive: false,
       surfaceActive: false,
       planets: planetData,
+      width: window.innerWidth,
+      isLarge: false,
     };
   },
 
+  mounted() {
+    if (this.width > "768") {
+      this.isLarge = true;
+    }
+    window.addEventListener("resize", this.onResize);
+  },
+
+  unmounted() {
+    window.addEventListener("resize", this.onResize);
+  },
+
   methods: {
+    onResize() {
+      this.width = window.innerWidth;
+      console.log(this.width);
+      if (this.width > "768") {
+        this.isLarge = true;
+      } else {
+        this.isLarge = false;
+      }
+    },
+
     updateActive(overviewActive, structureActive, surfaceActive) {
       this.overviewActive = overviewActive;
       this.structureActive = structureActive;
@@ -88,4 +125,9 @@ export default {
 </script>
 
 <style>
+.text-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>
