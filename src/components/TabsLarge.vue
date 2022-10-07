@@ -101,28 +101,19 @@ export default {
 }
 
 .text a {
-  /* mix-blend-mode: normal;
-  opacity: 0.5; */
   color: var(--white);
 }
 
 .text:hover {
   cursor: pointer;
-  /* opacity: 1; */
 }
 
 .text:hover {
   background-color: v-bind(style);
-  /* opacity: 1;
-  text-decoration: 4px underline v-bind(style);
-  text-underline-offset: 20px; */
 }
 
 .text.active-link {
   background-color: v-bind(style);
-  /* opacity: 1;
-  text-decoration: 4px underline v-bind(style);
-  text-underline-offset: 20px; */
 }
 
 span {
