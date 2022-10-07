@@ -85,16 +85,6 @@ export default {
   display: none;
 }
 
-/* .geology {
-  width: 30%;
-  transform: translateY(-35%);
-} */
-
-/* .saturn-geology {
-  width: 30%;
-  transform: translateY(-75%);
-} */
-
 /* -- MEDIA QUERIES -- */
 
 @media screen and (min-width: 768px) {
@@ -136,6 +126,60 @@ export default {
   .planet-neptune {
     width: 285px;
     height: 285px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .planet-mercury {
+    width: 290px;
+    height: 290px;
+  }
+
+  .planet-venus {
+    width: 400px;
+    height: 400px;
+  }
+
+  .planet-earth {
+    width: 450px;
+    height: 450px;
+  }
+
+  .planet-mars {
+    width: 336px;
+    height: 336px;
+  }
+
+  .planet-jupiter {
+    width: 582px;
+    height: 582px;
+  }
+
+  .planet-saturn {
+    width: 666px;
+    height: 666px;
+  }
+
+  .planet-uranus {
+    width: 458px;
+    height: 458px;
+  }
+
+  .planet-neptune {
+    width: 450px;
+    height: 450px;
+  }
+
+  .geology {
+    width: 163px;
+    height: 199px;
+    transform: translateY(-35%);
+  }
+
+  .saturn-geology {
+    width: 163px;
+    height: 199px;
+    transform: translateY(-75%);
   }
 }
 </style>
