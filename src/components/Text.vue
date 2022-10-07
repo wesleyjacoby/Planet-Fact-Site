@@ -1,7 +1,7 @@
 <template>
   <div class="text-container">
     <div class="header">
-      <h1 class="planet-name">{{ planetName }}</h1>
+      <h2 class="planet-name">{{ planetName }}</h2>
     </div>
 
     <article class="content">
