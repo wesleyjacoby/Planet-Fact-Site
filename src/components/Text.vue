@@ -1,7 +1,7 @@
 <template>
   <div class="text-container">
     <div class="header">
-      <h1>{{ planetName }}</h1>
+      <h1 class="planet-name">{{ planetName }}</h1>
     </div>
 
     <article class="content">
@@ -36,7 +36,7 @@ export default {
   margin-bottom: 28px;
 }
 
-h1 {
+.planet-name {
   font-family: "Antonio", sans-serif;
   font-weight: 500;
   font-size: 40px;
