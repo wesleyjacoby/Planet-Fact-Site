@@ -79,6 +79,7 @@ export default {
 
 <style scoped>
 .tabs-container {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -87,7 +88,6 @@ export default {
 }
 
 .text {
-  width: 281px;
   font-weight: 700;
   font-size: 9px;
   line-height: 25px;

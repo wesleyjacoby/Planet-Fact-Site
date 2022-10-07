@@ -79,6 +79,7 @@ a.wiki {
 
 @media screen and (min-width: 768px) {
   .text-container {
+    width: 50%;
     margin-left: 40px;
     margin-right: 69px;
     text-align: left;
