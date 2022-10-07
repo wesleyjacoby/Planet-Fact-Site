@@ -24,8 +24,8 @@
         @surface-tab="updateActive"
       />
     </div>
+    <PlanetStats :activeStats="activeStats" />
   </main>
-  <PlanetStats :activeStats="activeStats" />
 </template>
 
 <script>
