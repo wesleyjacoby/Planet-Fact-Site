@@ -42,35 +42,43 @@ export default {
 }
 
 .planet-mercury {
-  width: 30%;
+  width: 111px;
+  height: 111px;
 }
 
 .planet-venus {
-  width: 41%;
+  width: 154px;
+  height: 154px;
 }
 
 .planet-earth {
-  width: 46%;
+  width: 173px;
+  height: 173px;
 }
 
 .planet-mars {
-  width: 35%;
+  width: 129px;
+  height: 129px;
 }
 
 .planet-jupiter {
-  width: 60%;
+  width: 224px;
+  height: 224px;
 }
 
 .planet-saturn {
-  width: 68%;
+  width: 256px;
+  height: 256px;
 }
 
 .planet-uranus {
-  width: 47%;
+  width: 176px;
+  height: 176px;
 }
 
 .planet-neptune {
-  width: 46%;
+  width: 173px;
+  height: 173px;
 }
 
 .geology {
