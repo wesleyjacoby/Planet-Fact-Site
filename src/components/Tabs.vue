@@ -17,9 +17,9 @@
         ><p>Surface</p></a
       >
     </div>
-
-    <hr />
   </nav>
+
+  <hr />
 </template>
 
 <script>
@@ -118,5 +118,11 @@ export default {
   opacity: 1;
   text-decoration: 4px underline v-bind(style);
   text-underline-offset: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  hr {
+    display: none;
+  }
 }
 </style>
