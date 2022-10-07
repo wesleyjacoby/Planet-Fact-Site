@@ -124,9 +124,4 @@ export default {
 </script>
 
 <style>
-.text-tabs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 </style>
