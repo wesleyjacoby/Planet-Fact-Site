@@ -152,7 +152,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: calc(100vh - 70px);
+  height: 100vh;
   background: var(--dark-blue);
   z-index: 999;
 }
