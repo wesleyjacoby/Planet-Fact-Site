@@ -1,24 +1,22 @@
 <template>
-  <nav class="tabs-container" :style="style" v-show="!isLarge">
+  <nav class="tabs-container" :style="style" v-show="isLarge">
     <div class="text">
       <a @click="overviewClick" :class="[overviewActive ? 'active-link' : '']"
-        ><p>Overview</p></a
+        ><p><span>01</span>Overview</p></a
       >
     </div>
 
     <div class="text">
       <a @click="structureClick" :class="[structureActive ? 'active-link' : '']"
-        ><p>Structure</p></a
+        ><p><span>02</span>Internal Structure</p></a
       >
     </div>
 
     <div class="text">
       <a @click="surfaceClick" :class="[surfaceActive ? 'active-link' : '']"
-        ><p>Surface</p></a
+        ><p><span>03</span>Geology Surface</p></a
       >
     </div>
-
-    <hr />
   </nav>
 </template>
 
@@ -82,41 +80,54 @@ export default {
 <style scoped>
 .tabs-container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-right: 40px;
 }
 
 .text {
-  font-weight: 400;
+  width: 281px;
+  font-weight: 700;
   font-size: 9px;
-  line-height: 10px;
+  line-height: 25px;
   letter-spacing: 1.93px;
   text-transform: uppercase;
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
 }
 
 .text p {
-  padding: 20px 0px;
+  padding: 8px 20px;
 }
 
 .text a {
-  mix-blend-mode: normal;
-  opacity: 0.5;
+  /* mix-blend-mode: normal;
+  opacity: 0.5; */
   color: var(--white);
 }
 
 .text:hover {
   cursor: pointer;
-  opacity: 1;
+  /* opacity: 1; */
 }
 
-.text a:hover {
-  opacity: 1;
+.text:hover {
+  background-color: v-bind(style);
+  /* opacity: 1;
   text-decoration: 4px underline v-bind(style);
-  text-underline-offset: 20px;
+  text-underline-offset: 20px; */
 }
 
-.text a.active-link {
-  opacity: 1;
+.text.active-link {
+  background-color: v-bind(style);
+  /* opacity: 1;
   text-decoration: 4px underline v-bind(style);
-  text-underline-offset: 20px;
+  text-underline-offset: 20px; */
+}
+
+span {
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-right: 14px;
 }
 </style>

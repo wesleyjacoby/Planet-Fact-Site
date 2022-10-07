@@ -94,4 +94,48 @@ export default {
   width: 30%;
   transform: translateY(-75%);
 } */
+
+/* -- MEDIA QUERIES -- */
+
+@media screen and (min-width: 768px) {
+  .planet-mercury {
+    width: 184px;
+    height: 184px;
+  }
+
+  .planet-venus {
+    width: 253px;
+    height: 253px;
+  }
+
+  .planet-earth {
+    width: 285px;
+    height: 285px;
+  }
+
+  .planet-mars {
+    width: 213px;
+    height: 213px;
+  }
+
+  .planet-jupiter {
+    width: 369px;
+    height: 369px;
+  }
+
+  .planet-saturn {
+    width: 422px;
+    height: 422px;
+  }
+
+  .planet-uranus {
+    width: 290px;
+    height: 290px;
+  }
+
+  .planet-neptune {
+    width: 285px;
+    height: 285px;
+  }
+}
 </style>

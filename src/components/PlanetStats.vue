@@ -81,4 +81,32 @@ export default {
   text-transform: uppercase;
   color: var(--white);
 }
+
+@media screen and (min-width: 768px) {
+  .stats-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* gap: 11px; */
+    margin: 0px 39px 36px 39px;
+  }
+
+  .stat-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 69px 18px 15px;
+  }
+
+  .stat-text {
+    margin-bottom: 6px;
+  }
+
+  .stat {
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: -0.9px;
+  }
+}
 </style>

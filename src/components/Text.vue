@@ -76,4 +76,30 @@ a.wiki {
   text-decoration-line: underline;
   margin-right: 4px;
 }
+
+@media screen and (min-width: 768px) {
+  .text-container {
+    margin-left: 40px;
+    margin-right: 69px;
+    text-align: left;
+  }
+
+  .planet-name {
+    font-size: 48px;
+    line-height: 62px;
+  }
+
+  .description {
+    font-size: 11px;
+    line-height: 22px;
+    color: var(--white);
+    margin: 24px 0px 32px 0px;
+  }
+
+  .source {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
 </style>
