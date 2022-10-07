@@ -67,7 +67,6 @@ export default {
   methods: {
     onResize() {
       this.width = window.innerWidth;
-      console.log(this.width);
       if (this.width > "768") {
         this.isLarge = true;
       } else {
