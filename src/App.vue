@@ -4,14 +4,34 @@
       <router-link :to="{ name: 'mercury' }"><h1>The Planets</h1></router-link>
     </div>
     <nav class="desktop-menu">
-      <router-link :to="{ name: 'mercury' }">Mercury</router-link>
-      <router-link :to="{ name: 'venus' }">Venus</router-link>
-      <router-link :to="{ name: 'earth' }">Earth</router-link>
-      <router-link :to="{ name: 'mars' }">Mars</router-link>
-      <router-link :to="{ name: 'jupiter' }">Jupiter</router-link>
-      <router-link :to="{ name: 'saturn' }">Saturn</router-link>
-      <router-link :to="{ name: 'uranus' }">Uranus</router-link>
-      <router-link :to="{ name: 'neptune' }">Neptune</router-link>
+      <ul>
+        <li>
+          <router-link :to="{ name: 'mercury' }" class="main-menu"
+            >Mercury</router-link
+          >
+          <router-link :to="{ name: 'venus' }" class="main-menu"
+            >Venus</router-link
+          >
+          <router-link :to="{ name: 'earth' }" class="main-menu"
+            >Earth</router-link
+          >
+          <router-link :to="{ name: 'mars' }" class="main-menu"
+            >Mars</router-link
+          >
+          <router-link :to="{ name: 'jupiter' }" class="main-menu"
+            >Jupiter</router-link
+          >
+          <router-link :to="{ name: 'saturn' }" class="main-menu"
+            >Saturn</router-link
+          >
+          <router-link :to="{ name: 'uranus' }" class="main-menu"
+            >Uranus</router-link
+          >
+          <router-link :to="{ name: 'neptune' }" class="main-menu"
+            >Neptune</router-link
+          >
+        </li>
+      </ul>
     </nav>
 
     <div class="mobile-menu">
@@ -106,6 +126,29 @@ hr {
   mix-blend-mode: normal;
 }
 
+.main-menu,
+nav ul li .router-link-active,
+nav ul li .router-link-exact-active {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--white);
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+nav ul li .router-link-active,
+nav ul li .router-link-exact-active {
+  opacity: 1;
+}
+
+.main-menu:hover {
+  opacity: 1;
+}
+
 @keyframes fade-out {
   0% {
     opacity: 1;
@@ -121,6 +164,33 @@ hr {
   }
   100% {
     opacity: 1;
+  }
+}
+
+/* --MEDIA QUERIES-- */
+
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 32px 52px 27px 52px;
+  }
+
+  .desktop-menu {
+    width: 100%;
+    display: block;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .logo {
+    margin-bottom: 39px;
   }
 }
 </style>
