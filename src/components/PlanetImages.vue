@@ -1,15 +1,17 @@
 <template>
-  <div v-if="surfaceActive" class="planet-geology">
-    <img :src="activeImage[1]" :alt="className" :class="className" />
-    <img
-      :src="activeImage[0]"
-      class="geology"
-      :class="{ 'saturn-geology': planetName === 'Saturn' }"
-    />
-  </div>
+  <div class="image-container">
+    <div v-if="surfaceActive" class="planet-geology">
+      <img :src="activeImage[1]" :alt="className" :class="className" />
+      <img
+        :src="activeImage[0]"
+        class="geology"
+        :class="{ 'saturn-geology': planetName === 'Saturn' }"
+      />
+    </div>
 
-  <div v-else class="planet-image">
-    <img :src="activeImage" :alt="className" :class="className" />
+    <div v-else class="planet-image" :class="className">
+      <img :src="activeImage" :alt="className" />
+    </div>
   </div>
 </template>
 
@@ -29,16 +31,17 @@ export default {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 96px 0px;
+  margin: 48px auto;
 }
 
 .planet-geology {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 96px 0px;
+  margin: 48px auto;
 }
 
 .planet-mercury {
@@ -130,6 +133,17 @@ export default {
 }
 
 @media screen and (min-width: 1024px) {
+  .planet-image {
+    margin: 0px;
+  }
+
+  .image-container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .planet-mercury {
     width: 290px;
     height: 290px;
@@ -171,15 +185,17 @@ export default {
   }
 
   .geology {
+    position: absolute;
+    display: block;
     width: 163px;
     height: 199px;
-    transform: translateY(-35%);
+    transform: translateY(90%);
   }
 
   .saturn-geology {
     width: 163px;
     height: 199px;
-    transform: translateY(-75%);
+    transform: translateY(85%);
   }
 }
 </style>

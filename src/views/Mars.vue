@@ -7,22 +7,24 @@
       @structure-tab="updateActive"
       @surface-tab="updateActive"
     />
-    <PlanetImages
-      class="planet-image"
-      :className="className"
-      :activeImage="activeImage"
-      :planetName="planetName"
-      :surfaceActive="surfaceActive"
-    />
-    <div class="text-tabs">
-      <Text :planetName="planetName" :activeContent="activeContent" />
-      <TabsLarge
-        :isLarge="isLarge"
-        :style="color"
-        @overview-tab="updateActive"
-        @structure-tab="updateActive"
-        @surface-tab="updateActive"
+    <div class="large-container">
+      <PlanetImages
+        class="planet-image"
+        :className="className"
+        :activeImage="activeImage"
+        :planetName="planetName"
+        :surfaceActive="surfaceActive"
       />
+      <div class="text-tabs">
+        <Text :planetName="planetName" :activeContent="activeContent" />
+        <TabsLarge
+          :isLarge="isLarge"
+          :style="color"
+          @overview-tab="updateActive"
+          @structure-tab="updateActive"
+          @surface-tab="updateActive"
+        />
+      </div>
     </div>
     <PlanetStats :activeStats="activeStats" />
   </main>

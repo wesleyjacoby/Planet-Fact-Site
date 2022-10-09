@@ -80,7 +80,7 @@ a.wiki {
 @media screen and (min-width: 768px) {
   .text-container {
     width: 50%;
-    margin-left: 40px;
+    margin-left: 39px;
     margin-right: 69px;
     text-align: left;
   }
@@ -101,6 +101,33 @@ a.wiki {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .text-container {
+    width: 100%;
+    margin: 0px 0px 39px 0px;
+  }
+
+  .planet-name {
+    font-size: 80px;
+    line-height: 104px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 25px;
+    margin: 24px 0px 24px 0px;
+  }
+
+  .source-text {
+    font-size: 14px;
+  }
+
+  a.wiki {
+    font-size: 14px;
+    margin-right: 8px;
   }
 }
 </style>

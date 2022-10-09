@@ -1,19 +1,19 @@
 <template>
   <nav class="tabs-container" :style="style" v-show="isLarge">
-    <div class="text">
-      <a @click="overviewClick" :class="[overviewActive ? 'active-link' : '']"
+    <div class="text" :class="[overviewActive ? 'active-link disabled' : '']">
+      <a @click="overviewClick"
         ><p><span>01</span>Overview</p></a
       >
     </div>
 
-    <div class="text">
-      <a @click="structureClick" :class="[structureActive ? 'active-link' : '']"
+    <div class="text" :class="[structureActive ? 'active-link disabled' : '']">
+      <a @click="structureClick"
         ><p><span>02</span>Internal Structure</p></a
       >
     </div>
 
-    <div class="text">
-      <a @click="surfaceClick" :class="[surfaceActive ? 'active-link' : '']"
+    <div class="text" :class="[surfaceActive ? 'active-link disabled' : '']">
+      <a @click="surfaceClick"
         ><p><span>03</span>Geology Surface</p></a
       >
     </div>
@@ -84,7 +84,7 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   gap: 16px;
-  margin-right: 40px;
+  margin-right: 39px;
 }
 
 .text {
@@ -117,8 +117,37 @@ export default {
 }
 
 span {
+  font-size: 9px;
+  line-height: 25px;
+  letter-spacing: 1.93px;
   mix-blend-mode: normal;
   opacity: 0.5;
   margin-right: 14px;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .text:hover {
+    background-color: hsla(0, 0%, 85%, 0.2);
+  }
+
+  .tabs-container {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .text {
+    font-size: 12px;
+    letter-spacing: 2.57px;
+  }
+
+  span {
+    font-size: 12px;
+    letter-spacing: 2.57px;
+    margin-right: 28px;
+  }
 }
 </style>

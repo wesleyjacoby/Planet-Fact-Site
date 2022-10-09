@@ -7,22 +7,23 @@
       @structure-tab="updateActive"
       @surface-tab="updateActive"
     />
-    <PlanetImages
-      class="planet-image"
-      :className="className"
-      :activeImage="activeImage"
-      :planetName="planetName"
-      :surfaceActive="surfaceActive"
-    />
-    <div class="text-tabs">
-      <Text :planetName="planetName" :activeContent="activeContent" />
-      <TabsLarge
-        :isLarge="isLarge"
-        :style="color"
-        @overview-tab="updateActive"
-        @structure-tab="updateActive"
-        @surface-tab="updateActive"
+    <div class="large-container">
+      <PlanetImages
+        :className="className"
+        :activeImage="activeImage"
+        :planetName="planetName"
+        :surfaceActive="surfaceActive"
       />
+      <div class="text-tabs">
+        <Text :planetName="planetName" :activeContent="activeContent" />
+        <TabsLarge
+          :isLarge="isLarge"
+          :style="color"
+          @overview-tab="updateActive"
+          @structure-tab="updateActive"
+          @surface-tab="updateActive"
+        />
+      </div>
     </div>
     <PlanetStats :activeStats="activeStats" />
   </main>
@@ -124,9 +125,41 @@ export default {
 </script>
 
 <style>
+main {
+  margin: 0 auto;
+  max-width: 1250px;
+}
+
 .text-tabs {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .large-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 126px;
+    margin-bottom: 87px;
+  }
+
+  .text-tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+  }
 }
 </style>

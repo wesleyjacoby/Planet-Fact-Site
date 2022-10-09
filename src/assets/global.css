@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@400;700&display=swap');
 
-/* font-family: 'Antonio', sans-serif;
-font-family: 'League Spartan', sans-serif; */
-
 :root {
     --white: hsl(0, 0%, 100%);
     --dark-blue: hsl(240, 67%, 8%);
