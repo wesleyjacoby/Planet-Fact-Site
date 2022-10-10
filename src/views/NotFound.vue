@@ -25,6 +25,7 @@ export default {};
   align-items: center;
   text-align: center;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .lost-image img {
