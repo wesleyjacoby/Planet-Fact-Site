@@ -7,6 +7,7 @@ import Jupiter from '../views/Jupiter.vue'
 import Saturn from '../views/Saturn.vue'
 import Uranus from '../views/Uranus.vue'
 import Neptune from '../views/Neptune.vue'
+import NotFound from '../views/NotFound.vue'
 
 const routes = [
   {
@@ -56,6 +57,12 @@ const routes = [
     name: 'neptune',
     component: Neptune
   },
+
+  {
+    path: '/:catchAll(.*)',
+    name: NotFound,
+    component: NotFound
+  }
 ]
 
 const router = createRouter({
