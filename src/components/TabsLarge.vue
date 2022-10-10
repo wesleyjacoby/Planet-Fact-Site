@@ -91,7 +91,7 @@ export default {
   font-weight: 700;
   font-size: 0.5625rem;
   line-height: 1.5625rem;
-  letter-spacing: 1.5.8125rem;
+  letter-spacing: 0.1206rem;
   text-transform: uppercase;
   border: 1px solid hsla(0, 0%, 100%, 0.2);
 }
@@ -118,8 +118,8 @@ export default {
 
 span {
   font-size: 0.5625rem;
-  line-height: 1.5625rem;
-  letter-spacing: 1.5.8125rem;
+  line-height: 0.1206rem;
+  letter-spacing: 0.1206rem;
   mix-blend-mode: normal;
   opacity: 0.5;
   margin-right: 0.875rem;
@@ -130,6 +130,10 @@ span {
 }
 
 @media screen and (min-width: 64rem) {
+  .text p {
+    padding: 0.75rem 1.75rem;
+  }
+
   .text:hover {
     background-color: hsla(0, 0%, 85%, 0.2);
   }
