@@ -7,22 +7,24 @@
       @structure-tab="updateActive"
       @surface-tab="updateActive"
     />
-    <PlanetImages
-      class="planet-image"
-      :className="className"
-      :activeImage="activeImage"
-      :planetName="planetName"
-      :surfaceActive="surfaceActive"
-    />
-    <div class="text-tabs">
-      <Text :planetName="planetName" :activeContent="activeContent" />
-      <TabsLarge
-        :isLarge="isLarge"
-        :style="color"
-        @overview-tab="updateActive"
-        @structure-tab="updateActive"
-        @surface-tab="updateActive"
+    <div class="large-container">
+      <PlanetImages
+        class="planet-image"
+        :className="className"
+        :activeImage="activeImage"
+        :planetName="planetName"
+        :surfaceActive="surfaceActive"
       />
+      <div class="text-tabs">
+        <Text :planetName="planetName" :activeContent="activeContent" />
+        <TabsLarge
+          :isLarge="isLarge"
+          :style="color"
+          @overview-tab="updateActive"
+          @structure-tab="updateActive"
+          @surface-tab="updateActive"
+        />
+      </div>
     </div>
     <PlanetStats :activeStats="activeStats" />
   </main>
@@ -43,7 +45,7 @@ export default {
     return {
       planetName: "Uranus",
       className: "planet-uranus",
-      color: "hsla(169, 73%, 44%, 1))",
+      color: "hsla(169, 73%, 44%, 1)",
       overviewActive: true,
       structureActive: false,
       surfaceActive: false,

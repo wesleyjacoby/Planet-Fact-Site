@@ -110,4 +110,28 @@ export default {
     letter-spacing: -0.9px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .stats-container {
+    width: 100%;
+    column-gap: 30px;
+    margin: 0px 0px 56px 0px;
+  }
+
+  .stat-text {
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+
+  .stat-text {
+    margin-bottom: 4px;
+  }
+
+  .stat {
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: -1.5px;
+  }
+}
 </style>
