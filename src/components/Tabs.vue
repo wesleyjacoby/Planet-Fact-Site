@@ -87,14 +87,14 @@ export default {
 
 .text {
   font-weight: 400;
-  font-size: 9px;
-  line-height: 10px;
-  letter-spacing: 1.93px;
+  font-size: 0.5625rem;
+  line-height: 0.625rem;
+  letter-spacing: 0.1206rem;
   text-transform: uppercase;
 }
 
 .text p {
-  padding: 20px 0px;
+  padding: 1.25rem 0rem;
 }
 
 .text a {
@@ -111,16 +111,16 @@ export default {
 .text a:hover {
   opacity: 1;
   text-decoration: 4px underline v-bind(style);
-  text-underline-offset: 20px;
+  text-underline-offset: 1.25rem;
 }
 
 .text a.active-link {
   opacity: 1;
   text-decoration: 4px underline v-bind(style);
-  text-underline-offset: 20px;
+  text-underline-offset: 1.25rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
   hr {
     display: none;
   }

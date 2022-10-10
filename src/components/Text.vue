@@ -33,23 +33,23 @@ export default {
 <style>
 .text-container {
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 1.75rem;
 }
 
 .planet-name {
   font-family: "Antonio", sans-serif;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
   text-transform: uppercase;
   color: var(--white);
 }
 
 .description {
-  font-size: 11px;
-  line-height: 22px;
+  font-size: 0.6875rem;
+  line-height: 1.375rem;
   color: var(--white);
-  margin: 16px 24px 32px 24px;
+  margin: 1rem 1.5rem 2rem 1.5rem;
 }
 
 .source {
@@ -59,8 +59,8 @@ export default {
 }
 
 .source-text {
-  font-size: 12px;
-  line-height: 25px;
+  font-size: 0.75rem;
+  line-height: 1.5625rem;
   color: var(--white);
   mix-blend-mode: normal;
   opacity: 0.5;
@@ -68,33 +68,33 @@ export default {
 
 a.wiki {
   font-weight: 700;
-  font-size: 12px;
-  line-height: 25px;
+  font-size: 0.75rem;
+  line-height: 1.5625rem;
   color: var(--white);
   mix-blend-mode: normal;
   opacity: 0.5;
   text-decoration-line: underline;
-  margin-right: 4px;
+  margin-right: 0.25rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
   .text-container {
     width: 50%;
-    margin-left: 39px;
-    margin-right: 69px;
+    margin-left: 2.4375rem;
+    margin-right: 4.3125rem;
     text-align: left;
   }
 
   .planet-name {
-    font-size: 48px;
-    line-height: 62px;
+    font-size: 3rem;
+    line-height: 3.875rem;
   }
 
   .description {
-    font-size: 11px;
-    line-height: 22px;
+    font-size: 0.6875rem;
+    line-height: 1.375rem;
     color: var(--white);
-    margin: 24px 0px 32px 0px;
+    margin: 1.5rem 0rem 2rem 0rem;
   }
 
   .source {
@@ -104,30 +104,30 @@ a.wiki {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64rem) {
   .text-container {
     width: 100%;
-    margin: 0px 0px 39px 0px;
+    margin: 0rem 0rem 2.4375rem 0rem;
   }
 
   .planet-name {
-    font-size: 80px;
-    line-height: 104px;
+    font-size: 5rem;
+    line-height: 6.5rem;
   }
 
   .description {
-    font-size: 14px;
-    line-height: 25px;
-    margin: 24px 0px 24px 0px;
+    font-size: 0.875rem;
+    line-height: 1.5625rem;
+    margin: 1.5rem 0rem 1.5rem 0rem;
   }
 
   .source-text {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   a.wiki {
-    font-size: 14px;
-    margin-right: 8px;
+    font-size: 0.875rem;
+    margin-right: 0.5rem;
   }
 }
 </style>

@@ -31,7 +31,7 @@ export default {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 48px auto;
+  margin: 3rem auto;
 }
 
 .planet-geology {
@@ -41,47 +41,47 @@ export default {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 48px auto;
+  margin: 3rem auto;
 }
 
 .planet-mercury {
-  width: 111px;
-  height: 111px;
+  width: 6.9375rem;
+  height: 6.9375rem;
 }
 
 .planet-venus {
-  width: 154px;
-  height: 154px;
+  width: 9.625rem;
+  height: 9.625rem;
 }
 
 .planet-earth {
-  width: 173px;
-  height: 173px;
+  width: 10.8125rem;
+  height: 10.8125rem;
 }
 
 .planet-mars {
-  width: 129px;
-  height: 129px;
+  width: 8.0625rem;
+  height: 8.0625rem;
 }
 
 .planet-jupiter {
-  width: 224px;
-  height: 224px;
+  width: 14rem;
+  height: 14rem;
 }
 
 .planet-saturn {
-  width: 256px;
-  height: 256px;
+  width: 16rem;
+  height: 16rem;
 }
 
 .planet-uranus {
-  width: 176px;
-  height: 176px;
+  width: 11rem;
+  height: 11rem;
 }
 
 .planet-neptune {
-  width: 173px;
-  height: 173px;
+  width: 10.8125rem;
+  height: 10.8125rem;
 }
 
 .geology {
@@ -90,51 +90,51 @@ export default {
 
 /* -- MEDIA QUERIES -- */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
   .planet-mercury {
-    width: 184px;
-    height: 184px;
+    width: 11.5rem;
+    height: 11.5rem;
   }
 
   .planet-venus {
-    width: 253px;
-    height: 253px;
+    width: 15.8125rem;
+    height: 15.8125rem;
   }
 
   .planet-earth {
-    width: 285px;
-    height: 285px;
+    width: 17.8125rem;
+    height: 17.8125rem;
   }
 
   .planet-mars {
-    width: 213px;
-    height: 213px;
+    width: 13.3125rem;
+    height: 13.3125rem;
   }
 
   .planet-jupiter {
-    width: 369px;
-    height: 369px;
+    width: 23.0625rem;
+    height: 23.0625rem;
   }
 
   .planet-saturn {
-    width: 422px;
-    height: 422px;
+    width: 26.375rem;
+    height: 26.375rem;
   }
 
   .planet-uranus {
-    width: 290px;
-    height: 290px;
+    width: 18.125rem;
+    height: 18.125rem;
   }
 
   .planet-neptune {
-    width: 285px;
-    height: 285px;
+    width: 17.8125rem;
+    height: 17.8125rem;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64rem) {
   .planet-image {
-    margin: 0px;
+    margin: 0rem;
   }
 
   .image-container {
@@ -145,56 +145,56 @@ export default {
   }
 
   .planet-mercury {
-    width: 290px;
-    height: 290px;
+    width: 18.125rem;
+    height: 18.125rem;
   }
 
   .planet-venus {
-    width: 400px;
-    height: 400px;
+    width: 25rem;
+    height: 25rem;
   }
 
   .planet-earth {
-    width: 450px;
-    height: 450px;
+    width: 28.125rem;
+    height: 28.125rem;
   }
 
   .planet-mars {
-    width: 336px;
-    height: 336px;
+    width: 21rem;
+    height: 21rem;
   }
 
   .planet-jupiter {
-    width: 582px;
-    height: 582px;
+    width: 36.375rem;
+    height: 36.375rem;
   }
 
   .planet-saturn {
-    width: 666px;
-    height: 666px;
+    width: 41.625rem;
+    height: 41.625rem;
   }
 
   .planet-uranus {
-    width: 458px;
-    height: 458px;
+    width: 28.625rem;
+    height: 28.625rem;
   }
 
   .planet-neptune {
-    width: 450px;
-    height: 450px;
+    width: 28.125rem;
+    height: 28.125rem;
   }
 
   .geology {
     position: absolute;
     display: block;
-    width: 163px;
-    height: 199px;
+    width: 10.1875rem;
+    height: 12.4375rem;
     transform: translateY(90%);
   }
 
   .saturn-geology {
-    width: 163px;
-    height: 199px;
+    width: 10.1875rem;
+    height: 12.4375rem;
     transform: translateY(85%);
   }
 }

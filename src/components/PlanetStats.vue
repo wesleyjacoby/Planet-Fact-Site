@@ -48,24 +48,24 @@ export default {
 .stats-container {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin: 0px 24px 28px 24px;
+  gap: 0.5rem;
+  margin: 0rem 1.5rem 1.75rem 1.5rem;
 }
 
 .stat-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 24px;
+  padding: 0.625rem 1.5rem;
   mix-blend-mode: normal;
   border: 1px solid hsla(0, 0%, 100%, 0.2);
 }
 
 .stat-text {
   font-weight: 700;
-  font-size: 8px;
-  line-height: 16px;
-  letter-spacing: 0.73px;
+  font-size: 0.5rem;
+  line-height: 1rem;
+  letter-spacing: 0.0456rem;
   text-transform: uppercase;
   mix-blend-mode: normal;
   opacity: 0.5;
@@ -75,20 +75,20 @@ export default {
 .stat {
   font-family: "Antonio", sans-serif;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 26px;
-  letter-spacing: -0.75px;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  letter-spacing: -0.0469rem;
   text-transform: uppercase;
   color: var(--white);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
   .stats-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    column-gap: 11px;
-    margin: 0px 39px 36px 39px;
+    column-gap: 0.6875rem;
+    margin: 0rem 2.4375rem 2.25rem 2.4375rem;
   }
 
   .stat-box {
@@ -97,41 +97,41 @@ export default {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 18px 15px;
+    padding: 1.125rem 0.9375rem;
   }
 
   .stat-text {
-    margin-bottom: 6px;
+    margin-bottom: 0.375rem;
   }
 
   .stat {
-    font-size: 24px;
-    line-height: 31px;
-    letter-spacing: -0.9px;
+    font-size: 1.5rem;
+    line-height: 1.9375rem;
+    letter-spacing: -0.0563rem;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64rem) {
   .stats-container {
     width: 100%;
-    column-gap: 30px;
-    margin: 0px 0px 56px 0px;
+    column-gap: 1.875rem;
+    margin: 0rem 0rem 3.5rem 0rem;
   }
 
   .stat-text {
-    font-size: 11px;
-    line-height: 25px;
-    letter-spacing: 1px;
+    font-size: 0.6875rem;
+    line-height: 1.5625rem;
+    letter-spacing: 0.0625rem;
   }
 
   .stat-text {
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
   }
 
   .stat {
-    font-size: 40px;
-    line-height: 52px;
-    letter-spacing: -1.5px;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    letter-spacing: -0.0938rem;
   }
 }
 </style>

@@ -79,7 +79,7 @@ export default {
 #app {
   font-family: "League Spartan", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -88,15 +88,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 24px;
+  padding: 1rem 1.5rem;
 }
 
 .logo h1 {
   font-family: "Antonio", sans-serif;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 500;
-  line-height: 36px;
-  letter-spacing: -1.05px;
+  line-height: 2.25rem;
+  letter-spacing: -0.0656rem;
   text-transform: uppercase;
   color: var(--white);
 }
@@ -131,9 +131,9 @@ nav ul li .router-link-active,
 nav ul li .router-link-exact-active {
   font-family: "League Spartan", sans-serif;
   font-weight: 700;
-  font-size: 11px;
-  line-height: 25px;
-  letter-spacing: 1px;
+  font-size: 0.6875rem;
+  line-height: 1.5625rem;
+  letter-spacing: 0.0625rem;
   text-transform: uppercase;
   color: var(--white);
   mix-blend-mode: normal;
@@ -169,10 +169,10 @@ nav ul li .router-link-exact-active {
 
 /* --MEDIA QUERIES-- */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
   header {
     flex-direction: column;
-    padding: 32px 52px 27px 52px;
+    padding: 2rem 3.25rem 1.6875rem 3.25rem;
   }
 
   .desktop-menu {
@@ -190,25 +190,25 @@ nav ul li .router-link-exact-active {
   }
 
   .logo {
-    margin-bottom: 39px;
+    margin-bottom: 2.4375rem;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64rem) {
   header {
     flex-direction: row;
-    padding: 22px 40px 27px 32px;
+    padding: 1.375rem 2.5rem 1.6875rem 2rem;
   }
 
   li {
     justify-content: flex-end;
-    column-gap: 33px;
+    column-gap: 2.0625rem;
   }
 
   .logo {
     width: 100%;
     display: flex;
-    margin-bottom: 0px;
+    margin-bottom: 0rem;
   }
 }
 </style>

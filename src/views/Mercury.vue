@@ -127,7 +127,8 @@ export default {
 <style>
 main {
   margin: 0 auto;
-  max-width: 1250px;
+  min-width: 15.625rem;
+  max-width: 78.125rem;
 }
 
 .text-tabs {
@@ -136,23 +137,23 @@ main {
   align-items: center;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64rem) {
   main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .large-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 126px;
-    margin-bottom: 87px;
+    margin-top: 7.875rem;
+    margin-bottom: 5.4375rem;
   }
 
   .text-tabs {

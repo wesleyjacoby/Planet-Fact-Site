@@ -83,21 +83,21 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 16px;
-  margin-right: 39px;
+  gap: 1rem;
+  margin-right: 2.4375rem;
 }
 
 .text {
   font-weight: 700;
-  font-size: 9px;
-  line-height: 25px;
-  letter-spacing: 1.93px;
+  font-size: 0.5625rem;
+  line-height: 1.5625rem;
+  letter-spacing: 1.5.8125rem;
   text-transform: uppercase;
   border: 1px solid hsla(0, 0%, 100%, 0.2);
 }
 
 .text p {
-  padding: 8px 20px;
+  padding: 0.5rem 1.25rem;
 }
 
 .text a {
@@ -117,37 +117,37 @@ export default {
 }
 
 span {
-  font-size: 9px;
-  line-height: 25px;
-  letter-spacing: 1.93px;
+  font-size: 0.5625rem;
+  line-height: 1.5625rem;
+  letter-spacing: 1.5.8125rem;
   mix-blend-mode: normal;
   opacity: 0.5;
-  margin-right: 14px;
+  margin-right: 0.875rem;
 }
 
 .disabled {
   pointer-events: none;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64rem) {
   .text:hover {
     background-color: hsla(0, 0%, 85%, 0.2);
   }
 
   .tabs-container {
     width: 100%;
-    margin: 0px;
+    margin: 0rem;
   }
 
   .text {
-    font-size: 12px;
-    letter-spacing: 2.57px;
+    font-size: 0.75rem;
+    letter-spacing: 2.3.5625rem;
   }
 
   span {
-    font-size: 12px;
-    letter-spacing: 2.57px;
-    margin-right: 28px;
+    font-size: 0.75rem;
+    letter-spacing: 2.3.5625rem;
+    margin-right: 1.75rem;
   }
 }
 </style>
