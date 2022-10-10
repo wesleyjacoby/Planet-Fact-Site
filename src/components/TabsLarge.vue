@@ -141,12 +141,12 @@ span {
 
   .text {
     font-size: 0.75rem;
-    letter-spacing: 2.3.5625rem;
+    letter-spacing: 0.1606rem;
   }
 
   span {
     font-size: 0.75rem;
-    letter-spacing: 2.3.5625rem;
+    letter-spacing: 0.1606rem;
     margin-right: 1.75rem;
   }
 }
