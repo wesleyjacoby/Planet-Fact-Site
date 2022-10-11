@@ -2,7 +2,7 @@
   <div class="lost-container">
     <div class="lost-image">
       <h2 class="uh-oh">Uh-oh!</h2>
-      <img src="/assets/images/lost-astronaut.svg" alt="A Lost Astronaut" />
+      <img src="assets/images/lost-astronaut.svg" alt="A Lost Astronaut" />
     </div>
 
     <div class="lost-text">
